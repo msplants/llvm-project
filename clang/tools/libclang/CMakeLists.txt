@@ -21,6 +21,7 @@ set(SOURCES
   Indexing.cpp
   FatalErrorHandler.cpp
   Rewrite.cpp
+  DiffASTs.cpp
 
   ADDITIONAL_HEADERS
   CIndexDiagnostic.h
@@ -46,6 +47,7 @@ set(LIBS
   clangSema
   clangSerialization
   clangTooling
+  clangToolingASTDiff
 )
 
 if (CLANG_ENABLE_ARCMT)
